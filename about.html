@@ -7,13 +7,12 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="images/minecraft_sword.png">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-    <script src="https://use.fontawesome.com/ce18c92b36.js"></script>
     
     <link rel="icon" href="images/minecraft_sword.png">
-    <title>Ram | Landing Page</title>
+    <title>Ram | About</title>
     
-    <script src = "js/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/ce18c92b36.js"></script>
     
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,13 +32,18 @@
 		body {
 			margin-top: 0;
 			padding: 0;
-            /*background-color: #FEFEFE;*/
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
+            background-color: #FEFEFE;
 		}
         
-         #footer {
+        p{
+            font-size: 14px;
+        }
+        
+        h3{
+            font-size: 30px;
+        }
+        
+       #footer {
             position: absolute;
             width: 100%;
             bottom: 0px;
@@ -48,10 +52,6 @@
             font-size: 12px;
             color: #CCC;
             text-align: center;
-        }
-        
-        div #particles-js{
-            margin-top:0px;
         }
         
         nav{
@@ -90,34 +90,51 @@
 </head>
     
 <body>
-    <div id="particles-js"></div>
     <div class = "navbar-fixed">
-    <nav>
-    <div class="nav-wrapper transparent">
+   <nav>
+    <div class="nav-wrapper blue-grey darken-4">
       <a href = "index.html" style = "font-size:18px" class = "brand-logo">&nbsp;RAM&nbsp;</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <!--<li class="active"><a href = "index.html">Ram</a></li>-->
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class = "active">About</a></li>
         <li><a href = "courses.html">Courses</a></li>
         <li><a href="projects.html">Projects</a></li>
       </ul>
     </div>
   </nav>
     </div>
-    <div id = "footer" class = "page-footer blue-grey transparent"> 
+    <div id = "content" class = "container">
+        <h3 style = "text-align: center">Ramaseshan Parthasarathy</h3>
+        <p style = "text-align: center">
+            Hi! I'm currently a rising senior at <a href = "http://newbrunswick.rutgers.edu/?utm_source=rutgers.edu&utm_medium=web&utm_campaign=uwide_sliver" target = "_blank">Rutgers University New-Brunswick</a>  
+            pursing a double major in <a href = "http://ece.rutgers.edu" target = "_blank">Computer Engineering</a> and <a href = "https://www.cs.rutgers.edu" target="_blank">Computer Science</a>. 
+        </p>
+        <p style="text-align:center;">
+            <a href = "http://www.rutgers.edu/">
+            <img src = "/images/rutgers_logo.png" style="width:304px;height:228px;">
+            </a>
+        </p>
+        <p style = "text-align: center">
+        My main interests lie in Software Engineering, though I am equally as interested in Computer Networks and Systems Programming.
+        </p>
+        <p style = "text-align: center">
+        Apart from school, I am an avid <a href = "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=define+tabla" target = "_blank">Tabla</a> player. I have been playing for 7 years under the teaching of Dr. Pratik Devasthale of Plainsboro, NJ.
+        </p>
+        <p style = "text-align: center">Check out my resume <a href="/resume_v1.pdf" target = "_blank">here</a>, as well as some of my project work<a href="/projects.html"> here.</a></p>
+    </div>
+    <div id = "footer" class = "page-footer black"> 
         <a href="mailto:ramaseshan.par@rutgers.edu" target="_blank" style="color:white"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <a href="https://github.com/rpartha" target="_blank" style="color:white"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://linkedin.com/in/ramaseshanpar" target="_blank" style="color:white"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.facebook.com/RamPartha1996" target="_blank" style="color:white"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</div>
+    </div>
 </body>
     
-    
-    <!--<footer class="page-footer blue-grey transparent">
+    <!--<footer class="page-footer grey darken-4">
             <div class="container">
                 <div class="center-align row">
-                    <div class="col s12 m12 l3">
+                     <div class="col s12 m12 l3">
                         <ul class="contact">
                             <li><a href="mailto:ramaseshan.par@rutgers.edu" target="_blank" style="color:white"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
                         </ul>
@@ -140,6 +157,4 @@
                 </div>
             </div>
         </footer>-->
-    
-    <script src="js/particles.js"></script>
 </html>

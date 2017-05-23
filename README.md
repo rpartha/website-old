@@ -1,3 +1,1 @@
-# website-old
-## INACTIVE
-old version of rpartha.github.io
+This is my personal website. 
