@@ -1,0 +1,55 @@
+h1{
+  padding-top: 60px;
+  margin: 0px;
+}
+
+h7{
+  padding: 0px;
+  margin: 0px;
+}
+
+/*.mdl-layout__content {
+    padding: 24px;
+    flex: none;
+}*/
+
+.content-grid {
+    max-width: 960px;
+}
+
+.mdl-grid {
+    max-width: 600px;
+    padding-top: 70px;
+}
+.mdl-card__media {
+    margin: 0;
+}
+.mdl-card__media > img {
+    max-width: 100%;
+}
+.mdl-card__supporting-text{
+  padding: 0px;
+  margin: 18px;
+}
+
+.mdl-card__title-text{
+  padding: 0px;
+}
+.mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+    margin-right: 3px;
+    margin-left: 3px;
+    padding:0px;
+}
+
+canvas {
+  display: block;
+  left: 50%;
+  margin: -200px 0 0 -200px;
+  position: absolute;
+  top: 50%;
+}
