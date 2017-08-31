@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html lang = "en" class = "mdc-theme--light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Ramaseshan Parthasarathy">
+        <meta name="description" content="personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Ram's Personal Website</title>
+
+        <!--devicon-->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+        <!--material components css-->
+        <link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+
+        <!--Space Mono font-->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+        <!--material icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+        <script src = "js/typed.js"></script>
+
+        <!--Particles.js minified-->
+        <script src = "js/particles.min.js"></script>
+
+        <!--styling-->
+        <style>
+
+            :root {
+                --mdc-theme-primary: #000000;
+                --mdc-theme-accent: #d50000;
+                --mdc-theme-text-primary-on-primary: #ffffff;
+                --mdc-theme-text-secondary-on-primary: #000000;
+            }
+
+            @import "@material/theme/mdc-theme.scss";
+
+            #navb, #particles{
+                	background: linear-gradient(-45deg, #304ffe, #e96443, #904395, #23A6D5, #23D5AB);
+                    background-size: 400% 400%;
+                    -webkit-animation: gradient 15s ease infinite;
+                    -moz-animation: gradient 15s ease infinite;
+                    animation: gradient 15s ease infinite;
+            }
+
+            @-webkit-keyframes gradient {
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+            }
+
+            @-moz-keyframes gradient {
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+            }
+
+            #contact > a:hover{
+                filter: invert(100%);
+                padding-right: 50px;
+            }
+
+            #overlay{
+                position: relative;
+            }
+        </style>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-99834068-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </head>
+
+
+    <!-- nav with slider -->
+    <div id = "navb" class="mdc-toolbar mdc-theme--accent-bg" style = "height:57px; overflow:hidden;">
+        <div class="mdc-toolbar__row">
+            <div class="mdc-toolbar__section mdc-toolbar__section--shrink-to-fit mdc-toolbar__section--align-start " style = "margin: 0px;">
+                <h1 class="mdc-toolbar__title" style = "padding-right: 2px; font-family: 'Space Mono', monospace; font-style: italic;"><a href = "index.html" style = "color: white; text-decoration: none;">RAM</a></h1>
+            </div>
+            <div class="mdc-toolbar__section mdc-toolbar__section--align-end">
+                <div>
+                  <nav id="toolbar-tab-bar-primary-indicator" class="mdc-tab-bar mdc-tab-bar--indicator-primary" style = "margin: 0px; padding: 0px;">
+                    <a class="mdc-tab mdc-tab--active" href="index.html" style = "padding: 0px; font-family: 'Space Mono', monospace; font-weight: bold;">HOME</a>
+                    <a class="mdc-tab" href="#about" style = "padding: 0px; font-family: 'Space Mono', monospace; font-weight: bold;">ABOUT</a>
+                    <a class="mdc-tab" href="#courses" style = "padding: 0px; font-family: 'Space Mono', monospace; font-weight: bold;">COURSES</a>
+                    <a class="mdc-tab" href="#projects" style = "padding: 0px; font-family: 'Space Mono', monospace; font-weight: bold;">PROJECTS</a>
+                    <a class="mdc-tab" href="#contact" style = "padding: 0px; font-family: 'Space Mono', monospace; font-weight: bold;">CONTACT</a>
+                    <span class="mdc-tab-bar__indicator"></span>
+                  </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <body style = "margin: 0px;">
+        <div id = "particles" class="container" style="width:100%; position:absolute; top:57; left:0; height:260px; overflow:hidden;">
+		    <div style="height:100%; z-index: 0" id="particles-js">
+            </div>
+            <!--<div id = "overlay"><span class="element" style = "font-family: 'Space Mono', monospace; font-size: 50px"></span></div>-->
+        </div>
+
+        <!--about me-->
+        <div id = "about" style = "height: 44em; background-image:url(img/playstation-pattern.png); background-repeat: repeat-x repeat-y;">
+             <h1 style = "padding-top: 261px; margin-left: 10px; text-decoration: underline; color: black;font-family: 'Space Mono', monospace;">About Me</h1>
+            <p style = "margin-top: 0px;"><a href = "/Ram's-Resume.pdf" target = "_blank"><button class="mdc-button mdc-button--raised mdc-button--accent" style = "margin-left: 10px; padding-left: 120px; padding-right: 125px;">RESUME</button></a></p>
+            <p style="float: left; margin-top: 0px; margin-left: 10px; padding-right: 50px;"><img src="../DSC_0019_copy.jpg" style = "height: 300px"></p>
+
+            <p class="text-faded" style = "font-family: Monaco, Consolas, monospace;font-size:18px; color: #000; padding-left: 20px;" align = "justify"; >Hi! I'm currently a rising senior at <a href = "http://newbrunswick.rutgers.edu/?utm_source=rutgers.edu&utm_medium=web&utm_campaign=uwide_sliver" target = "_blank" style = "color: #000; font-weight: bold;">Rutgers University New-Brunswick</a> pursing a <br> double major in <a href = "http://ece.rutgers.edu" target = "_blank" style = "color: #000; font-weight: bold;">Computer Engineering</a> and <a href = "https://www.cs.rutgers.edu" target="_blank" style = "color:#000; font-weight: bold;">Computer Science</a>. I modelled my courses <br> after the requirement resources <a href = "http://www.ece.rutgers.edu/files/undergraduate/current-handbook.pdf" style = "color:#000; font-weight: bold;" target = "_blank">here</a> and <a href = "https://www.cs.rutgers.edu/undergraduate/requirements-bs-computer-science" target="_blank" style = "color:#000; font-weight: bold;">here</a>. Particularly, my interests lie in <br> Software Engineering and Systems Programming. College aside, I am an avid <a href = "https://www.google.com/search?q=define%20tabla" target = "_blank" style = "color:#000; font-weight: bold;">Tabla</a> <br>player. I've been playing for 7 years under the teaching of Dr. Pratik Devasthale <br> of Plainsboro, NJ. I am currently looking for technology internships to leverage <br>  my social, teamwork, and technical skills.</p>
+            <p style = "font-family: Monaco, Consolas, monospace; font-weight: bold;">Languages/Frameworks:
+                <img src = "https://rpartha.github.io/icons/android-plain-wordmark.svg" style = "vertical-align: middle; marigin-top: 0px"height="30px">
+                <img src = "https://rpartha.github.io/icons/c-original.svg" style = "vertical-align: middle;" height="30px">
+                <img src = "https://rpartha.github.io/icons/css3-original-wordmark.svg" style = "vertical-align: middle;" height="30px">
+                <img src = "https://rpartha.github.io/icons/git-original-wordmark.svg" style = "vertical-align: middle;" height="40px">
+                <img src = "https://rpartha.github.io/icons/github-original-wordmark.svg" style = "vertical-align: middle; height:30px">
+                <img src = "https://rpartha.github.io/icons/html5-original-wordmark.svg" style = "vertical-align: middle;" height="30px">
+                <img src = "https://rpartha.github.io/icons/java-original-wordmark.svg"  style = "vertical-align: middle;" height="40x">
+                <img src = "https://rpartha.github.io/icons/javascript-original.svg" style = "vertical-align: middle;" height="30px">
+                <img src = "https://rpartha.github.io/icons/mysql-original-wordmark.svg" style = "vertical-align: middle;" height="50px">
+                <img src = "https://rpartha.github.io/icons/nodejs-original-wordmark.svg" style = "vertical-align: middle;" height="60px">
+                <img src = "https://rpartha.github.io/icons/ssh-original-wordmark.svg" style = "vertical-align: middle;" height="55px">
+            </p>
+            <p style = "font-family: Monaco, Consolas, monospace; font-weight: bold;" style = "margin-top:  0px; clear:both">Operating Systems:
+                <img src = "https://rpartha.github.io/icons/apple-original.svg" style = "vertical-align: middle;" height="40px">
+                <img src = "https://rpartha.github.io/icons/linux-original.svg" style = "vertical-align: middle; height:40px">
+                <img src = "https://rpartha.github.io/icons/ubuntu-plain-wordmark.svg" style = "vertical-align: middle;" height="40px">
+                <img src = "https://rpartha.github.io/icons/windows.svg" style = "vertical-align: middle;" height="30px">
+            </p>
+        </div>
+
+        <!--course work-->
+        <div id = "courses" style = "background: linear-gradient(to right, #cb2d3e, #ef473a); overflow:auto;">
+            <h1 style = "margin-left: 10px; margin-top: 0px; text-decoration: underline; color: white;font-family: 'Space Mono', monospace;">Selected Coursework</h1>
+            <div class = "col">
+                <ul class = "mdc-list" style = "color: white;font-family: 'Space Mono', monospace; margin-bottom: 0px; float: left; margin: 0 320px 0 0;">
+                  <li class = "mdc-list-item">&bull;General Chemistry For Engineers + Lab</li>
+                  <li class = "mdc-list-item">&bull;Engineering Mechanics: Statics</li>
+                  <li class = "mdc-list-item">&bull;Calculus I, II, III, IV</li>
+                  <li class = "mdc-list-item">&bull;Analytical Physics: Mechanics, Rotational, E & M + Lab</li>
+                  <li class = "mdc-list-item">&bull;Intro to Computers for Engineers (MATLAB)</li>
+                  <li class = "mdc-list-item">&bull;Digital Logic Design + Lab</li>
+                  <li class = "mdc-list-item">&bull;Principles of Electrical Engineering I, II + Labs</li>
+                  <li class = "mdc-list-item">&bull;Probability and Stochastic Processes</li>
+                  <li class = "mdc-list-item">&bull;CS Computer Architecture + Lab</li>
+                  <li class = "mdc-list-item">&bull;Linear Systems and Signals + Lab</li>
+                </ul>
+            </div>
+            <div class = "col">
+                <ul class = "mdc-list" style = "color: white;font-family: 'Space Mono', monospace;">
+                  <li class = "mdc-list-item">&bull;Intro to Computer Systems (OS)</li>
+                  <li class = "mdc-list-item">&bull;Professionalism and Ethics</li>
+                  <li class = "mdc-list-item">&bull;Intro to Computer Science</li>
+                  <li class = "mdc-list-item">&bull;Data Structures</li>
+                  <li class = "mdc-list-item">&bull;Intro to Linear Algebra</li>
+                  <li class = "mdc-list-item">&bull;Discrete Structures</li>
+                  <li class = "mdc-list-item">&bull;Systems Programming</li>
+                  <li class = "mdc-list-item">&bull;Design and Analysis of Algorithms</li>
+                  <li class = "mdc-list-item">&bull;Principles of Info and Data Management</li>
+                  <li class = "mdc-list-item">&bull;Internet Technology</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--projects-->
+        <div id = "projects" style = "background: linear-gradient(to right, #1cd8d2, #93edc7); margin-top: 0px; overflow:hidden;">
+            <h1 style = "margin-left: 10px; margin-top: 0px; text-decoration: underline; color: black;font-family: 'Space Mono', monospace;">Project Portfolio</h1>
+
+            <div class="mdc-grid-list mdc-grid-list--twoline-caption mdc-grid-list--with-icon-align-end" style = "margin-left: 160px; overflow:hidden;">
+              <ul class="mdc-grid-list__tiles">
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                      <a href = "https://github.com/haranku16/chatup" target = "_blank"><i class="mdc-grid-tile__icon material-icons" target = "_blank" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 14px;">Chatarang Chat</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">Spring MVC, MongoDB</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                    <a href = "https://github.com/rpartha/hotel-reservation" target = "_blank"><i class="mdc-grid-tile__icon material-icons" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 14px;">Hotel Web App</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">MySQL, Node.JS</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                    <a href = "https://github.com/rpartha/speedbyte-restaurant-automation-application" target = "_blank"><i class="mdc-grid-tile__icon material-icons" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 14px;">Restaurant App</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">Android, Express</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                    <a href = "https://github.com/rpartha/SafeAlarm" target = "_blank"><i class="mdc-grid-tile__icon material-icons" target = "_blank" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 14px;">Safe Alarm HackRU Sp17</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 10px;">Android, Python, Express</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                     <a href = "https://github.com/rpartha/malloc-simulator" target="_blank"><i class="mdc-grid-tile__icon material-icons" target = "_blank" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 13px;">Malloc Simulator</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">C</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="mdc-grid-list mdc-grid-list--twoline-caption mdc-grid-list--with-icon-align-end" style = "margin-left: 160px; padding-bottom: 20px; overflow:hidden;">
+              <ul class="mdc-grid-list__tiles" style = "margin-bottom: 0px;">
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                     <a href = "https://github.com/rpartha/rpartha.github.io" target = "_blank"><i class="mdc-grid-tile__icon material-icons" target = "_blank" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 13px;">Personal Website</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">HTML, JS, CSS</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                     <a href = "https://github.com/rpartha/MaterialTasksPlus" target = "_blank"><i class="mdc-grid-tile__icon material-icons" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 13px;">Material Tasks Plus</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">Android</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                     <a href = "https://github.com/rpartha/tic-tac-toe" target = "_blank"><i class="mdc-grid-tile__icon material-icons" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 14px;">Tic Tac Toe</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">Java</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_code_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;" />
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                    <a href = "https://github.com/rpartha/TMDB_CineFlash" target = "_blank"><i class="mdc-grid-tile__icon material-icons" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 14px;">TMDB Movies</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">Work In Progress</span>
+                  </span>
+                </li>
+                <li class="mdc-grid-tile">
+                  <div class="mdc-grid-tile__primary">
+                    <img class="mdc-grid-tile__primary-content" src="https://rpartha.github.io/img/ic_insert_emoticon_black_36dp_1x.png" style = "padding-top: 55px; padding-left: 80px; padding-bottom: 41px; padding-right: 83px; height: 36px; width: 36px; background-color: #ffffff;"/>
+                  </div>
+                  <span class="mdc-grid-tile__secondary">
+                     <a href = "wip.html" target = "_blank"><i class="mdc-grid-tile__icon material-icons" style = "color: #f44336">launch</i></a>
+                    <span class="mdc-grid-tile__title" style = "font-family: 'Space Mono', monospace; font-size: 14px;">?????</span>
+                    <span class="mdc-grid-tile__support-text" style = "font-size: 11px;">TBD</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <!--contact info-->
+        <div id = "contact" style = "background: linear-gradient(to right, #fc4a1a, #f7b733); margin-top: 0px; padding-bottom: 20px; overflow:hidden;">
+             <h1 style = "margin-left: 10px; margin-top: 0px; text-decoration: underline; color: white;font-family: 'Space Mono', monospace;">Web-O-Sphere</h1>
+            <a href = "https://www.linkedin.com/in/ramaseshanpar/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style = "padding-left: 50px; color: black;"></i></a>
+            <a href = "https://github.com/rpartha" target="_blank"><i class="fa fa-github-alt fa-2x" aria-hidden="true" style = "padding-left: 50px; color: black;"></i></a>
+            <a href = "mailto:rp770@scarletmail.rutgers.edu"><i class="fa fa-envelope fa-2x" aria-hidden="true" style = "padding-left: 50px; color: black;"></i></a>
+            <a href = "https://www.facebook.com/RamPartha1996" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true" style = "padding-left: 50px; color: black;"></i></a>
+            <a href = "https://plus.google.com/+RamaseshanParthasarathy1996" target="_blank"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true" style = "padding-left: 50px; color: black;"></i></a>
+        </div>
+
+        <!--go back to top-->
+        <div>
+            <a href = "#navb"><button class="mdc-fab mdc-fab--mini material-icons" aria-label="Favorite" style = "float: right; margin-right: 20px; margin-top: 13px; background-color: #304ffe;">
+              <span class="mdc-fab__icon">
+                keyboard_arrow_up
+              </span>
+            </button></a>
+        </div>
+
+
+        <div id = "copyright" style = "background: linear-gradient(to right, #000000, #212121); font-family: 'Space Mono', monospace;">
+            <p style = "text-align: center; color: white; margin: 0px; padding: 20px;">&copy; 2017 Ramaseshan Parthasarathy</p>
+        </div>
+
+
+        <!--jQuery-->
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--FA Icons-->
+        <script src="https://use.fontawesome.com/ee1c96c8fe.js"></script>
+
+        <!--material components js-->
+        <script src="material-components-web/dist/material-components-web.js"></script>
+
+        <!--Particles.js-->
+        <script src="js/particles.js"></script>
+
+        <!--sliders-->
+        <script>
+        (function() {
+            setTimeout(function () {
+                window.accentIndicatorTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#toolbar-tab-bar-primary-indicator'));
+            },200)
+            })();
+        </script>
+
+        <!--smooth scrolling-->
+        <script>
+            $('a[href*=\\#]').on('click', function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+            });
+        </script>
+
+        <!--refresh to top-->
+        <script>
+            $(window).on('beforeunload', function(){
+              $(window).scrollTop(0);
+            });
+        </script>
+    </body>
+</html>
